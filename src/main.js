@@ -6,14 +6,17 @@ import '@progress/kendo-theme-material/dist/all.css'
 import { Pager,
         ListView,
         ListViewInstaller } from '@progress/kendo-listview-vue-wrapper'
+import { DataSource, DataSourceInstaller } from '@progress/kendo-datasource-vue-wrapper'
 
 Vue.use(ListViewInstaller)
+Vue.use(DataSourceInstaller)
 
 new Vue({
   el: '#app',
   components: {
     Pager,
-    ListView
+    ListView,
+    DataSource
   },
   render: h => h(App)
 })
